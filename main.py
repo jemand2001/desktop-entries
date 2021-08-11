@@ -73,7 +73,7 @@ def main():
     parser.add_argument(
         '-n', default=None, help='If specified, the name of the application to search')
     parser.add_argument('--output', default='name,path', help=f'comma separated list of output'
-                                                                                  f' fields (any combination of ({", ".join(o.name for o in Output)}))')
+                        f' fields (any combination of ({", ".join(o.name for o in Output)}))')
     parser.add_argument('--sep', default='\t')
     args = parser.parse_args()
 
